@@ -75,9 +75,9 @@ SET(Boost_USE_MULTITHREADED ON)
 SET(Boost_NO_BOOST_CMAKE ON) 
 
 IF (USE_PYALEMBIC)
-    FIND_PACKAGE(Boost 1.42.0 COMPONENTS program_options python REQUIRED thread)
+    FIND_PACKAGE(Boost COMPONENTS program_options python37 REQUIRED thread)
 ELSE()
-    FIND_PACKAGE(Boost 1.42.0 COMPONENTS program_options REQUIRED thread)
+    FIND_PACKAGE(Boost COMPONENTS program_options REQUIRED thread)
 ENDIF()
 
 #-******************************************************************************
