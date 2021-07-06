@@ -47,7 +47,7 @@ namespace boost
 {
 
 template<class T>
-inline T * get_pointer( Alembic::Util::shared_ptr<T> const & p )
+inline T * get_pointer_xxx( Alembic::Util::shared_ptr<T> const & p )
 {
         return p.get();
 }

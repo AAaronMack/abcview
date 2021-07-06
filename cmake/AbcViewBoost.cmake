@@ -79,9 +79,9 @@ IF (USE_PYALEMBIC AND APPLE)
 ENDIF()
 
 IF (USE_PYTHON)
-    FIND_PACKAGE(Boost 1.42.0 COMPONENTS program_options python)
+    FIND_PACKAGE(Boost COMPONENTS program_options python37)
 ELSE()
-    FIND_PACKAGE(Boost 1.42.0 COMPONENTS program_options)
+    FIND_PACKAGE(Boost COMPONENTS program_options)
 ENDIF()
 
 #-******************************************************************************

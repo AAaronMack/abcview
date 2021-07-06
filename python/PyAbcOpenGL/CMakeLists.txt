@@ -33,9 +33,9 @@
 ##
 ##-*****************************************************************************
 
-IF (Boost_PYTHON_LIBRARY AND PYTHON_LIBRARY)
-  MESSAGE(STATUS "Found libboost_python: ${Boost_PYTHON_LIBRARY}")
-  SET(PLIBS ${PYTHON_LIBRARY} ${Boost_PYTHON_LIBRARY})
+IF (Boost_PYTHON37_LIBRARY AND PYTHON_LIBRARY)
+  MESSAGE(STATUS "Found libboost37_python: ${Boost_PYTHON37_LIBRARY}")
+  SET(PLIBS ${PYTHON_LIBRARY} ${Boost_PYTHON37_LIBRARY})
 
   SET(CPP_FILES
       PyAlembicOpenGL.cpp

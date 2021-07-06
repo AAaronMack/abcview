@@ -67,17 +67,16 @@ void ColorOverride::clearColorOverride(){
 C3f ColorOverride::color_override( const std::string &comparison_string, const C3f &no_match_color ) const
 {
     C3f result_color=no_match_color;
-    std::map<std::string, C3f>::iterator it;
-    it = m_color_overrides.find(comparison_string);
+    auto it = m_color_overrides.find(comparison_string);
     if (it != m_color_overrides.end())
     {
          // We have a match therefore set a color
          result_color = it -> second;
-    }    
+    }
     return result_color;
 } 
 
-std::map<std::string, C3f> ColorOverride::m_color_overrides;
+//std::map<std::string, C3f> ColorOverride::m_color_overrides;
 
 } // End namespace ABCOPENGL_VERSION_NS
 } // End namespace AbcOpenGL

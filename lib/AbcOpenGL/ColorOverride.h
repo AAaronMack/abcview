@@ -59,8 +59,8 @@ public:
     const std::map<std::string, C3f> &overrides() const{ return m_color_overrides ;}
     C3f color_override ( const std::string &comparison_string, const C3f &no_match_color ) const;    
 
-protected:
-    static std::map<std::string, C3f> m_color_overrides;
+private:
+    std::map<std::string, C3f> m_color_overrides{};
 
 };
 
